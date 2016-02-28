@@ -6,7 +6,6 @@ Final = finish;
 
 
 start:anything -> block_system;
-last:anything -> finish;
 
 
 block_system:anything -> is_service_available;
@@ -275,7 +274,6 @@ is_request_block_ok,
 is_service_available,
 is_system_block_ok,
 is_uri_too_long,
-last,
 missing,
 missing_has_precondition,
 moved,
@@ -344,7 +342,6 @@ is_request_block_ok:B2,
 is_service_available:B24,
 is_system_block_ok:B17,
 is_uri_too_long:B23,
-last:P25,
 missing:G7,
 missing_has_precondition:H9,
 moved:I7,
