@@ -172,45 +172,7 @@ to_content:true -N7-> 200_OK;
 
 
 100_CONTINUE:anything -A11,A10-> has_content;
-200_OK:anything -> last;
-200_OK_alternative:anything -> block_response_alternative;
-201_CREATED:anything -> last;
-202_ACCEPTED:anything -> block_response_alternative;
-204_NO_CONTENT:anything -> last;
-300_MULTIPLE_CHOICES:anything -> block_response_alternative;
-303_SEE_OTHER:anything -> last;
-304_NOT_MODIFIED:anything -> last;
-307_TEMPORARY_REDIRECT:anything -> last;
-308_PERMANENT_REDIRECT:anything -> last;
-400_BAD_REQUEST:anything -> block_response_alternative;
-401_UNAUTHORIZED:anything -> block_response_alternative;
-403_FORBIDDEN:anything -> block_response_alternative;
-404_NOT_FOUND:anything -> block_response_alternative;
-405_METHOD_NOT_ALLOWED:anything -> block_response_alternative;
-406_NOT_ACCEPTABLE:anything -> block_response_alternative;
-409_CONFLICT:anything -> block_response_alternative;
-410_GONE:anything -> block_response_alternative;
-410_GONE:anything -> block_response_alternative;
-412_PRECONDITION_FAILED:anything -> block_response_alternative;
-413_PAYLOAD_TOO_LARGE:anything -> block_response_alternative;
-414_URI_TOO_LONG:anything -> block_response_alternative;
-415_UNSUPPORTED_MEDIA_TYPE:anything -> block_response_alternative;
-417_EXPECTATION_FAILED:anything -> block_response_alternative;
-431_REQUEST_HEADER_FIELDS_TOO_LARGE:anything -> block_response_alternative;
-451_UNAVAILABLE_FOR_LEGAL_REASONS:anything -> block_response_alternative;
-500_INTERNAL_SERVER_ERROR:anything -> block_response_alternative;
-501_NOT_IMPLEMENTED:anything -> block_response_alternative;
-503_SERVICE_UNAVAILABLE:anything -> block_response_alternative;
 
-
-block_response_alternative:anything -> is_response_alternative;
-is_response_alternative:false -P21-> last;
-is_response_alternative:true -N21-> alternative_has_accept;
-alternative_has_accept:false -P22-> last;
-alternative_has_accept:true -> alternative_accept_matches;
-alternative_accept_matches:false -P23-> last;
-alternative_accept_matches:true -> alternative_to_content;
-alternative_to_content:anything -P24-> last;
 
 
 anything,
@@ -252,9 +214,6 @@ accept_charset_matches,
 accept_encoding_matches,
 accept_language_matches,
 accept_matches,
-alternative_accept_matches,
-alternative_has_accept,
-alternative_to_content,
 are_content_headers_implemented,
 are_expect_extensions_implemented,
 are_headers_too_large,
@@ -265,7 +224,6 @@ block_precondition_missing,
 block_process,
 block_request,
 block_response,
-block_response_alternative,
 block_response_process,
 block_retrieve,
 block_retrieve_missing,
@@ -314,7 +272,6 @@ is_method_trace,
 is_precondition_safe,
 is_process_done,
 is_request_block_ok,
-is_response_alternative,
 is_service_available,
 is_system_block_ok,
 is_uri_too_long,
@@ -338,9 +295,6 @@ accept_charset_matches:E4,
 accept_encoding_matches:F5,
 accept_language_matches:D3,
 accept_matches:C2,
-alternative_accept_matches:N23,
-alternative_has_accept:N22,
-alternative_to_content:N24,
 are_content_headers_implemented:B20,
 are_expect_extensions_implemented:B18,
 are_headers_too_large:B22,
@@ -387,7 +341,6 @@ is_method_trace:B4,
 is_precondition_safe:F14,
 is_process_done:N14,
 is_request_block_ok:B2,
-is_response_alternative:O21,
 is_service_available:B24,
 is_system_block_ok:B17,
 is_uri_too_long:B23,
@@ -445,7 +398,6 @@ block_precondition_missing:H9,
 block_process:J10,
 block_request:B13,
 block_response:N10,
-block_response_alternative:O21,
 block_response_create:N3,
 block_response_process:N14,
 block_retrieve:G7,
@@ -460,7 +412,6 @@ block_precondition:C9:I17,
 block_process:J9:M16,
 block_request:A1:B16,
 block_response:N1:P16,
-block_response_alternative:O21:P24,
 block_retrieve:G1:I8,
 block_system:A17:B24
 : block;
