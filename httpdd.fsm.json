@@ -39,16 +39,6 @@
     {
       "__type": "transition",
       "states": [
-        "last"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "finish"
-    },
-    {
-      "__type": "transition",
-      "states": [
         "block_system"
       ],
       "messages": [
@@ -1929,406 +1919,6 @@
       "next_state": "has_content"
     },
     {
-      "__type": "transition",
-      "states": [
-        "200_OK"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "last"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "200_OK_alternative"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "201_CREATED"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "last"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "202_ACCEPTED"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "204_NO_CONTENT"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "last"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "300_MULTIPLE_CHOICES"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "303_SEE_OTHER"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "last"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "304_NOT_MODIFIED"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "last"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "307_TEMPORARY_REDIRECT"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "last"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "308_PERMANENT_REDIRECT"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "last"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "400_BAD_REQUEST"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "401_UNAUTHORIZED"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "403_FORBIDDEN"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "404_NOT_FOUND"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "405_METHOD_NOT_ALLOWED"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "406_NOT_ACCEPTABLE"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "409_CONFLICT"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "410_GONE"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "410_GONE"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "412_PRECONDITION_FAILED"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "413_PAYLOAD_TOO_LARGE"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "414_URI_TOO_LONG"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "415_UNSUPPORTED_MEDIA_TYPE"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "417_EXPECTATION_FAILED"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "431_REQUEST_HEADER_FIELDS_TOO_LARGE"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "451_UNAVAILABLE_FOR_LEGAL_REASONS"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "500_INTERNAL_SERVER_ERROR"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "501_NOT_IMPLEMENTED"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "503_SERVICE_UNAVAILABLE"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "block_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "block_response_alternative"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "next_state": "is_response_alternative"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "is_response_alternative"
-      ],
-      "messages": [
-        "false"
-      ],
-      "coords": [
-        {
-          "x": "P",
-          "y": "21"
-        }
-      ],
-      "next_state": "last"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "is_response_alternative"
-      ],
-      "messages": [
-        "true"
-      ],
-      "coords": [
-        {
-          "x": "N",
-          "y": "21"
-        }
-      ],
-      "next_state": "alternative_has_accept"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "alternative_has_accept"
-      ],
-      "messages": [
-        "false"
-      ],
-      "coords": [
-        {
-          "x": "P",
-          "y": "22"
-        }
-      ],
-      "next_state": "last"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "alternative_has_accept"
-      ],
-      "messages": [
-        "true"
-      ],
-      "next_state": "alternative_accept_matches"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "alternative_accept_matches"
-      ],
-      "messages": [
-        "false"
-      ],
-      "coords": [
-        {
-          "x": "P",
-          "y": "23"
-        }
-      ],
-      "next_state": "last"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "alternative_accept_matches"
-      ],
-      "messages": [
-        "true"
-      ],
-      "next_state": "alternative_to_content"
-    },
-    {
-      "__type": "transition",
-      "states": [
-        "alternative_to_content"
-      ],
-      "messages": [
-        "anything"
-      ],
-      "coords": [
-        {
-          "x": "P",
-          "y": "24"
-        }
-      ],
-      "next_state": "last"
-    },
-    {
       "__type": "declaration",
       "names": [
         "anything",
@@ -2373,9 +1963,6 @@
         "accept_encoding_matches",
         "accept_language_matches",
         "accept_matches",
-        "alternative_accept_matches",
-        "alternative_has_accept",
-        "alternative_to_content",
         "are_content_headers_implemented",
         "are_expect_extensions_implemented",
         "are_headers_too_large",
@@ -2386,7 +1973,6 @@
         "block_process",
         "block_request",
         "block_response",
-        "block_response_alternative",
         "block_response_process",
         "block_retrieve",
         "block_retrieve_missing",
@@ -2441,11 +2027,9 @@
         "is_precondition_safe",
         "is_process_done",
         "is_request_block_ok",
-        "is_response_alternative",
         "is_service_available",
         "is_system_block_ok",
         "is_uri_too_long",
-        "last",
         "missing",
         "missing_has_precondition",
         "moved",
@@ -2496,27 +2080,6 @@
           "center": {
             "x": "C",
             "y": "2"
-          }
-        },
-        {
-          "name": "alternative_accept_matches",
-          "center": {
-            "x": "N",
-            "y": "23"
-          }
-        },
-        {
-          "name": "alternative_has_accept",
-          "center": {
-            "x": "N",
-            "y": "22"
-          }
-        },
-        {
-          "name": "alternative_to_content",
-          "center": {
-            "x": "N",
-            "y": "24"
           }
         },
         {
@@ -2842,13 +2405,6 @@
           }
         },
         {
-          "name": "is_response_alternative",
-          "center": {
-            "x": "O",
-            "y": "21"
-          }
-        },
-        {
           "name": "is_service_available",
           "center": {
             "x": "B",
@@ -2867,13 +2423,6 @@
           "center": {
             "x": "B",
             "y": "23"
-          }
-        },
-        {
-          "name": "last",
-          "center": {
-            "x": "P",
-            "y": "25"
           }
         },
         {
@@ -3044,13 +2593,6 @@
           }
         },
         {
-          "name": "block_response_alternative",
-          "center": {
-            "x": "O",
-            "y": "21"
-          }
-        },
-        {
           "name": "block_response_create",
           "center": {
             "x": "N",
@@ -3155,17 +2697,6 @@
           "bottom_right": {
             "x": "P",
             "y": "16"
-          }
-        },
-        {
-          "name": "block_response_alternative",
-          "top_left": {
-            "x": "O",
-            "y": "21"
-          },
-          "bottom_right": {
-            "x": "P",
-            "y": "24"
           }
         },
         {

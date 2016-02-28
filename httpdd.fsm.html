@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>HTTP Decision Diagram</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/0.8.1/joint.css"></link>
+    <link rel="stylesheet" href="assets/joint.css"></link>
     <script>
       // fix Chrome 48+
       // http://jointjs.com/blog/get-transform-to-element-polyfill.html
@@ -10,11 +10,14 @@
           return toElement.getScreenCTM().inverse().multiply(this.getScreenCTM());
       };
     </script>
-    <script src="http://coffeescript.org/extras/coffee-script.js"></script>
+    <script src="assets/coffee-script.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/0.8.1/joint.all.js"></script> -->
-    <script src="joint.all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/0.8.1/joint.shapes.fsa.js"></script>
+    <script src="assets/joint.all.js"></script>
+    <script src="assets/joint.shapes.fsa.js"></script>
     <script type="text/coffeescript" src="httpdd.fsm.html.coffee"></script>
+    <!--
+    <script type="text/javascript" src="httpdd.fsm.html.js"></script>
+    -->
   </head>
   <body style="margin:0">
     <div id="foreword" style="position:absolute; padding:5px; display:none">
